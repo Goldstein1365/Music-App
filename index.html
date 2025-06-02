@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music APP</title>
+    <link rel="shortcut icon" href="image7.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="asset.css" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <i class="bx bx-menu-wider btn" id="playlist-img"></i>
+      <h2>FEEL THE MUSIC</h2>
+      <!-- <img src="music.svg" alt="music" id="music-img"> -->
+      <i class="bx bx-music-alt btn"></i>
+    </header>
+
+    <main>
+      <div class="left">
+        <div class="song-image"></div>
+
+        <div class="volume-div">
+          <div class="volume-img">
+            <span id="vol-svg">🔊</span>
+          </div>
+          <input
+            type="range"
+            name="volume-range"
+            id="volume-range"
+            value="40"
+            onchange="volume()"
+          />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="details">
+          <h3 id="song-name">Hallelujah</h3>
+          <h5 id="song-singer">Noble G</h5>
+        </div>
+        <input
+          type="range"
+          id="song-duration"
+          value="0"
+          onchange="duration()"
+        />
+        <div class="controls">
+          <div class="prev-img">
+            <span id="prev-img" onclick="previousSong()">⏮️</span>
+          </div>
+          <div class="play-pause">
+            <!-- <span id="pause-img">⏸️</span> -->
+            <span id="play-pause" onclick="playPause()">▶️</span>
+          </div>
+          <div class="next-img">
+            <span id="next-img" onclick="nextSong()">⏭️</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="playlist">
+        <div class="playlist-song">
+          <img src="image1.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>Cool Jazz</h2>
+            <h5>Jazz Band</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image2.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>Smooth Jazz</h2>
+            <h5>John Coltrane</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image3.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>blue Jazz</h2>
+            <h5>Prerez Stony</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image4.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>Cabaret Jazz</h2>
+            <h5>Classico Latina</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image5.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>Classic Jazz</h2>
+            <h5>League Bass</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image6.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>quetz</h2>
+            <h5>Westtoms</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image7.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>7th Ones</h2>
+            <h5>Snarky Puppy</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image8.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>Alone Child</h2>
+            <h5>Jazz Autumns</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image9.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>baby calm</h2>
+            <h5>Jazz Band Latin</h5>
+          </div>
+        </div>
+        <div class="playlist-song">
+          <img src="image10.jpeg" alt="1" />
+          <div class="song-details">
+            <h2>giselle</h2>
+            <h5>Jazz Band Spain</h5>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <script src="test.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
