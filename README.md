@@ -1,5 +1,7 @@
 # Music-App
 
+![image](https://github.com/user-attachments/assets/401a750b-3e94-4354-ae3e-5862c41c67d9)
+
 A responsive web-based music player built with HTML, CSS, and JavaScript.
 
 ## Features
